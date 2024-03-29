@@ -5,18 +5,21 @@ import java.util.Scanner;
 public class BackJ10808 {
 
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
 
-        int[] A = new int[26]; //알파벳 갯수는 26개
+        int[] arr = new int[26];
 
-        char[] temp = sc.next().toCharArray(); //String를 알파벳 하나씩의 배열로 바꿔 char 배열로 받는다.
+        char[] temp = sc.next().toCharArray();
 
-        for (char c : temp) {
-            A[c - 97]++;
+        for (int i=0; i < temp.length; i++) {
+            arr[temp[i] - 97]++;
         }
 
-        for (int j : A) {
-            System.out.print(j + " ");
+        for (int i=0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
         }
     }
+
+
 }
