@@ -18,12 +18,11 @@ public class BaekJ5622 {
 
             for (int j = 0; j < arr.length; j++) {
                 if (arr[j].indexOf(st.charAt(i)) != -1) {
-                    time += j + 2;
+                    time += j + 3;
                     break;
                 }
             }
 
-            time += 1;
         }
 
         System.out.println(time);
